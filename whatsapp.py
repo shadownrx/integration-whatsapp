@@ -3,7 +3,7 @@ import os
 from twilio.rest import Client
 
 
-account_sid = os.environ['Appi_key']
+account_sid = os.environ['Api_key']
 auth_token = os.environ['Api_token']
 client = Client(account_sid, auth_token)
 
@@ -14,3 +14,5 @@ message = client.messages.create(
                           )
 
 print(message.sid)
+
+
